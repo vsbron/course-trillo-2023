@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+}
+
+.sidebar {
+  background-color: $color-gray-dark-1;
+  flex: 0 0 18%;
+}
+
+.hotel-view {
+  background-color: $color-white;
+  flex: 1;
+}
