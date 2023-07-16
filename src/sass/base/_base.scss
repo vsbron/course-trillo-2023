@@ -1,0 +1,47 @@
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+}
+
+// ::selection {
+//   background-color: $color-primary;
+//   color: $color-white;
+// }
+
+// ::-webkit-scrollbar { width: 17px }
+
+// ::-webkit-scrollbar-track { background-color: $color-gray-light-2 }
+
+// ::-webkit-scrollbar-thumb { background: $color-primary  }
+
+// ::-webkit-scrollbar-thumb:hover { background: $color-primary-light }
+
+html {
+  font-size: 62.5%;               // 1rem = 10px | 10/16 = 62.5%
+  scrollbar-color: $color-primary $color-gray-light-2;
+  scroll-behavior: smooth;
+
+  @include respond(desk-big) {
+    font-size: 75%;               // 1rem = 12px | 12/16 = 75%
+  }
+  
+  @include respond(tab-land) {
+    font-size: 56.25%;            // 1rem = 9px | 9/16 = 56.25%
+  }
+
+  @include respond(tab-port) {    
+    font-size: 50%;               // 1rem = 8px | 8/16 = 50%
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-size: $default-font-size;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: $color-gray-dark-2;
+  background: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark) no-repeat;
+
+  min-height: 100vh;
+}

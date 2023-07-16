@@ -1,0 +1,27 @@
+*, *:after, *:before {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  scrollbar-color: #EB2F64 #f4f2f2;
+  scroll-behavior: smooth; }
+  @media only screen and (min-width: 120.25em) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: #777;
+  background: linear-gradient(to right bottom, #FF3366, #BA265D) no-repeat;
+  min-height: 100vh; }
