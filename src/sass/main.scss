@@ -2,15 +2,20 @@
 @import "abstract/variables";
 
 @import "base/base";
+@import "base/typography";
 
 @import "components/button";
+@import "components/description";
 @import "components/gallery";
 @import "components/overview";
+@import "components/recommend";
 @import "components/search";
 @import "components/user-nav";
+@import "components/user-reviews";
 
 @import "layout/container";
 @import "layout/content";
+@import "layout/detail";
 @import "layout/footer";
 @import "layout/header";
 @import "layout/side-nav";

@@ -30,6 +30,34 @@ body {
 a:visited {
   color: currentColor; }
 
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem; }
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border: #f4f2f2 1px solid;
+  border-left: none;
+  border-right: none; }
+  .list__2-cols {
+    display: flex;
+    flex-wrap: wrap; }
+  .list__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem; }
+    .list__item::before {
+      content: "";
+      display: inline-block;
+      height: 1rem;
+      width: 1rem;
+      margin-right: .7rem;
+      background-color: #EB2F64;
+      -webkit-mask-image: url(../img/chevron-thin-right.svg);
+      mask-image: url(../img/chevron-thin-right.svg);
+      -webkit-mask-size: cover;
+      mask-size: cover; }
+
 .btn {
   border: none;
   cursor: pointer;
@@ -54,6 +82,13 @@ a:visited {
   50% {
     transform: scale(1.05);
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); } }
+
+.description {
+  font-size: 1.4rem;
+  background-color: #fff;
+  flex: 0 0 60%;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 3rem; }
 
 .gallery {
   display: flex; }
@@ -101,6 +136,22 @@ a:visited {
     .overview__rating-count {
       font-size: .8rem;
       text-transform: uppercase; }
+
+.recommend {
+  font-size: 1.3rem;
+  color: #999;
+  display: flex;
+  align-items: center; }
+  .recommend__count {
+    margin-right: auto; }
+  .recommend__photo {
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: #fff 3px solid; }
+    .recommend__photo:not(:last-child) {
+      margin-right: -1.5rem; }
 
 .search {
   flex: 0 0 40%;
@@ -177,6 +228,10 @@ a:visited {
     border-radius: 50%;
     margin-right: 1rem; }
 
+.user-reviews {
+  background-color: yellowgreen;
+  flex: 1; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -195,8 +250,14 @@ a:visited {
 
 .hotel-view {
   background-color: #fff;
-  flex: 1;
-  height: 80rem; }
+  flex: 1; }
+
+.detail {
+  display: flex;
+  gap: 4.5rem;
+  padding: 4.5rem;
+  background: #faf9f9;
+  border-bottom: #f4f2f2 1px solid; }
 
 .header {
   height: 7rem;
