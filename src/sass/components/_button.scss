@@ -1,0 +1,32 @@
+.btn {
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  transition: all .2s ease-out;
+
+  &--inline {
+    color: $color-primary;
+    border-bottom: currentColor 1px solid;
+    padding-bottom: 2px;
+    display: inline-block;
+    background: transparent;
+
+    &:hover { color: $color-gray-dark-1 }
+
+    &:focus {
+      outline: none;
+      animation: pulsate 1s linear infinite
+    }
+  }
+}
+
+@keyframes pulsate{
+  0%, 100%{
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50%{
+    transform: scale(1.05);
+box-shadow: 0 1rem 4rem rgba($color-black,.25)
+  }
+}

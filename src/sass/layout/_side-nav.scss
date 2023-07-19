@@ -6,9 +6,7 @@
   &__item {
     position: relative;
 
-    &:not(:last-child) {
-      margin-bottom: .5rem;
-    }
+    &:not(:last-child) { margin-bottom: .5rem }
 
     &:before {
       content: "";

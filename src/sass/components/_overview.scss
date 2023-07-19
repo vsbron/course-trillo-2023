@@ -1,0 +1,57 @@
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: $color-gray-light-2 1px solid;
+  
+  &__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+  }
+
+  &__stars {
+    margin-right: auto;
+    display: flex;
+  }
+
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: $color-primary;
+  }
+
+  &__icon-location { margin-right: .5rem }
+
+  &__location {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__rating {
+    background: $color-primary;
+    color: $color-white;
+    margin-left: 3rem;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.25rem;
+
+    &-average {
+      font-size: 2.25rem;
+      font-weight: 300;
+      line-height: 1.3;
+    }
+
+    &-count {
+      font-size: .8rem;
+      text-transform: uppercase;
+    }
+  }
+
+}
