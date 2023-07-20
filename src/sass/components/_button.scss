@@ -11,11 +11,22 @@
     display: inline-block;
     background: transparent;
 
-    &:hover { color: $color-gray-dark-1 }
+    &:hover {
+      color: $color-gray-dark-1;
+
+      & span {
+        margin-left: 8px;
+      }
+    }
 
     &:focus {
       outline: none;
       animation: pulsate 1s linear infinite
+    }
+
+    & span {
+      margin-left: 3px;
+      transition: margin-left .3s ease-out;
     }
   }
 }
@@ -27,6 +38,6 @@
   }
   50%{
     transform: scale(1.05);
-box-shadow: 0 1rem 4rem rgba($color-black,.25)
+    box-shadow: 0 1rem 4rem rgba($color-black,.25)
   }
 }
