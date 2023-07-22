@@ -3,4 +3,9 @@
   margin: 8rem auto;
   background-color: $color-gray-light-2;
   box-shadow: $shadow-dark;
+
+  @include respond (tab-land) {
+    margin: 0;
+    max-width: 100%;
+  }
 }

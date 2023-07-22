@@ -3,17 +3,27 @@
   padding: 0;
   box-sizing: inherit; }
 
+::selection {
+  background-color: #EB2F64;
+  color: #fff; }
+
+::-webkit-scrollbar {
+  width: 17px; }
+
+::-webkit-scrollbar-track {
+  background-color: #f4f2f2; }
+
+::-webkit-scrollbar-thumb {
+  background: #333; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777; }
+
 html {
   font-size: 62.5%;
-  scrollbar-color: #EB2F64 #f4f2f2;
+  scrollbar-color: #333 #f4f2f2;
   scroll-behavior: smooth; }
-  @media only screen and (min-width: 120.25em) {
-    html {
-      font-size: 75%; } }
   @media only screen and (max-width: 75em) {
-    html {
-      font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
 
@@ -120,19 +130,28 @@ a:visited {
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); } }
 
 .cta {
-  padding: 3.5rem 0;
+  padding: 3.5rem 2.5rem;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .cta {
+      padding: 2.5rem; } }
   .cta__book-now {
     font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .cta__book-now {
+        margin-bottom: 1.5rem; } }
 
 .description {
   background-color: #fff;
   flex: 0 0 60%;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .description {
+      padding: 2rem; } }
 
 .gallery {
   display: flex; }
@@ -150,6 +169,10 @@ a:visited {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__heading {
+        font-size: 1.8rem;
+        padding: 1.25rem 2rem; } }
   .overview__stars {
     margin-right: auto;
     display: flex; }
@@ -173,13 +196,22 @@ a:visited {
     justify-content: center;
     align-items: center;
     padding: 0 2.25rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__rating {
+        padding: 0 1.5rem; } }
     .overview__rating-average {
       font-size: 2.25rem;
       font-weight: 300;
       line-height: 1.3; }
+      @media only screen and (max-width: 37.5em) {
+        .overview__rating-average {
+          font-size: 1.8rem; } }
     .overview__rating-count {
       font-size: .8rem;
       text-transform: uppercase; }
+      @media only screen and (max-width: 37.5em) {
+        .overview__rating-count {
+          font-size: 1rem; } }
 
 .recommend {
   font-size: 1.3rem;
@@ -188,6 +220,8 @@ a:visited {
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -196,6 +230,9 @@ a:visited {
     border: #fff 3px solid; }
     .recommend__photo:not(:last-child) {
       margin-right: -1.5rem; }
+      @media only screen and (max-width: 75em) {
+        .recommend__photo:not(:last-child) {
+          margin-right: -2rem; } }
 
 .review {
   position: relative;
@@ -203,8 +240,17 @@ a:visited {
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   padding: 3rem;
   overflow: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .review {
+      padding: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .review {
+      width: 100%; } }
   .review:not(:last-child) {
     margin-bottom: 3.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .review:not(:last-child) {
+        margin-bottom: 3rem; } }
   .review__text {
     position: relative;
     z-index: 10;
@@ -247,6 +293,11 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 31.25em) {
+    .search {
+      order: 1;
+      flex: 0 0 100%;
+      background-color: #f4f2f2; } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -328,9 +379,16 @@ a:visited {
   margin: 8rem auto;
   background-color: #f4f2f2;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      max-width: 100%; } }
 
 .content {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
 
 .sidebar {
   background-color: #333;
@@ -350,6 +408,13 @@ a:visited {
   padding: 4.5rem;
   background: #faf9f9;
   border-bottom: #f4f2f2 1px solid; }
+  @media only screen and (max-width: 56.25em) {
+    .detail {
+      padding: 3rem;
+      gap: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .detail {
+      flex-direction: column; } }
 
 .header {
   height: 7rem;
@@ -359,6 +424,11 @@ a:visited {
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem; }
+  @media only screen and (max-width: 31.25em) {
+    .header {
+      flex-wrap: wrap;
+      align-content: space-evenly;
+      height: 11rem; } }
 
 .logo {
   height: 3.25rem;
@@ -368,10 +438,20 @@ a:visited {
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .side-nav {
+      display: flex;
+      margin: 0; } }
   .side-nav__item {
     position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__item {
+        flex: 1; } }
     .side-nav__item:not(:last-child) {
       margin-bottom: .5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .side-nav__item:not(:last-child) {
+          margin-bottom: 0; } }
     .side-nav__item:before {
       content: "";
       position: absolute;
@@ -397,14 +477,30 @@ a:visited {
     padding: 1.5rem 3rem;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        justify-content: center;
+        padding: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        flex-direction: column;
+        padding: 1.75rem 1.5rem 1.5rem; } }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor; }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__icon {
+        margin-right: 0;
+        width: 1.5rem;
+        height: 1.5rem; } }
 
 .copyright {
   font-size: 1.2rem;
   text-align: center;
   padding: 2rem;
   color: #ccc; }
+  @media only screen and (max-width: 56.25em) {
+    .copyright {
+      display: none; } }

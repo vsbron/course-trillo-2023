@@ -4,8 +4,15 @@
   box-shadow: $shadow-light;
   padding: 3rem;
   overflow: hidden;
+
+  @include respond (tab-port) { padding: 2rem }
   
-  &:not(:last-child){ margin-bottom: 3.5rem }
+  @include respond (phone) { width: 100% }
+  
+  &:not(:last-child){
+    margin-bottom: 3.5rem;
+    @include respond (tab-port) { margin-bottom: 3rem }
+  }
 
   &__text {
     position: relative;

@@ -5,4 +5,11 @@
   padding: 4.5rem;
   background: $color-gray-light-1;
   border-bottom: $border-default;
+
+  @include respond (tab-port) {
+    padding: 3rem;
+    gap: 3rem;
+  }
+
+  @include respond (phone) { flex-direction: column }
 }

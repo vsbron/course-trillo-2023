@@ -1,5 +1,6 @@
 .content {
   display: flex;
+  @include respond (tab-port) { flex-direction: column }
 }
 
 .sidebar {
