@@ -15,34 +15,23 @@
         <img src="src/img/logo.png" alt="Trillo logo" class="logo" />
         <form action="#" class="search">
           <input type="text" class="search__input" placeholder="Search hotels" />
-          <button class="search__button">
-            <svg class="search__icon">
-              <use xlink:href="src/img/sprite.svg#magnifying-glass"></use>
-            </svg>
-          </button>
+          <button class="search__button"><svg class="search__icon"><use xlink:href="src/img/sprite.svg#magnifying-glass"></use></svg></button>
         </form>
         <nav class="user-nav">
           <div class="user-nav__icon-box">
-            <svg class="user-nav__icon">
-              <use xlink:href="src/img/sprite.svg#bookmark"></use>
-            </svg>
+            <svg class="user-nav__icon"><use xlink:href="src/img/sprite.svg#bookmark"></use></svg>
             <span class="user-nav__notification">7</span>
           </div>
           <div class="user-nav__icon-box">
-            <svg class="user-nav__icon">
-              <use xlink:href="src/img/sprite.svg#chat"></use>
-            </svg>
+            <svg class="user-nav__icon"><use xlink:href="src/img/sprite.svg#chat"></use></svg>
             <span class="user-nav__notification">13</span>
           </div>
           <div class="usernav__user">
             <img src="src/img/user.jpg" alt="User photo" class="user-nav__user-photo">
             <span class="user-nav__user-name">BroN</span>
-          </div>
-        </nav>
-      </header>
+          </div></nav></header>
 
       <div class="content">
-
         <nav class="sidebar">
           <ul class="side-nav">
             <li class="side-nav__item side-nav__item--active"><a href="#" class="side-nav__link">
@@ -60,27 +49,18 @@
             <li class="side-nav__item"><a href="#" class="side-nav__link">
               <svg class="side-nav__icon"><use xlink:href="src/img/sprite.svg#map"></use></svg>
               <span>Tours</span>
-            </a></li>
-          </ul>
+            </a></li></ul>
           <div class="copyright">
             Built by VSBroN as a part of the Advanced CSS and Sass online learning course. This project is available on <a href="https://github.com/vsbron/course-trillo-2023" target="_blank">GitHub</a>.<br />
             &copy;2023. All rights reserved.
-          </div>
-        </nav>
+          </div></nav>
 
         <main class="hotel-view">
           <div class="gallery">
-            <figure class="gallery__item">
-              <img src="src/img/hotel-1.jpg" class="gallery__photo" alt="Photo of hotel 1" />
-            </figure>
-            <figure class="gallery__item">
-              <img src="src/img/hotel-2.jpg" class="gallery__photo" alt="Photo of hotel 2" />
-            </figure>
-            <figure class="gallery__item">
-              <img src="src/img/hotel-3.jpg" class="gallery__photo" alt="Photo of hotel 3" />
-            </figure>
+            <figure class="gallery__item"><img src="src/img/hotel-1.jpg" class="gallery__photo" alt="Photo of hotel 1" /></figure>
+            <figure class="gallery__item"><img src="src/img/hotel-2.jpg" class="gallery__photo" alt="Photo of hotel 2" /></figure>
+            <figure class="gallery__item"><img src="src/img/hotel-3.jpg" class="gallery__photo" alt="Photo of hotel 3" /></figure>
           </div>
-
           <div class="overview">
             <h1 class="overview__heading">Hotel Las Palmas</h1>
             <div class="overview__stars">
@@ -97,10 +77,7 @@
             <div class="overview__rating">
               <div class="overview__rating-average">8.6</div>
               <div class="overview__rating-count">429 votes</div>
-            </div>
-
-
-          </div>
+            </div></div>
           <div class="detail">
             <div class="description">
               <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.</p>
@@ -122,11 +99,8 @@
                   <img src="src/img/user-4.jpg" class="recommend__photo" alt="Friend 2" />
                   <img src="src/img/user-5.jpg" class="recommend__photo" alt="Friend 3" />
                   <img src="src/img/user-6.jpg" class="recommend__photo" alt="Friend 4" />
-                </div>
-              </div>
-            </div>
+                </div></div></div>
             <div class="user-reviews">
-              
               <figure class="review">
                 <blockquote class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.</blockquote>
                 <figcaption class="review__user">
@@ -136,9 +110,7 @@
                     <p class="review__user-date">Feb 23rd, 2017</p>
                   </div>
                   <div class="review__rating">7.8</div>
-                </figcaption>
-              </figure>
-              
+                </figcaption></figure>
               <figure class="review">
                 <blockquote class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.</blockquote>
                 <figcaption class="review__user">
@@ -148,21 +120,21 @@
                     <p class="review__user-date">Sep 13th, 2017</p>
                   </div>
                   <div class="review__rating">9.3</div>
-                </figcaption>
-              </figure>
-
+                </figcaption></figure>
               <button class="btn btn--inline">Show all <span>&rarr;</span></button>
-
             </div>
+          </div>
+
+          <div class="cta">
+            <h2 class="cta__book-now">Good news! We have 4 free rooms for your selected dates!</h2>
+            <button class="btn btn__gradient">
+              <span class="btn__gradient--visible">Book Now!</span>
+              <span class="btn__gradient--invisible">Only 4 rooms left</span>
+            </button>
           </div>
         </main>
 
       </div>
-
-      <footer class="footer">
-        Footer part
-      </footer>
-
     </div>
   </body>
 </html>

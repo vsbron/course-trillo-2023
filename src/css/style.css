@@ -79,6 +79,37 @@ a:visited {
     .btn--inline span {
       margin-left: 3px;
       transition: margin-left .3s ease-out; }
+  .btn__gradient {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, #FF3366 0%, #BA265D 50%, #FF3366 100%);
+    background-size: 200% auto;
+    color: #fff;
+    position: relative;
+    overflow: hidden; }
+    .btn__gradient > * {
+      display: inline-block;
+      transition: all .2s ease-out; }
+    .btn__gradient--visible {
+      padding: 2rem 7.5rem; }
+    .btn__gradient--invisible {
+      position: absolute;
+      padding: 2rem 0;
+      left: 0;
+      top: -100%;
+      height: 100%;
+      width: 100%; }
+    .btn__gradient:hover {
+      background-position: -100% 0; }
+    .btn__gradient:hover .btn__gradient--visible {
+      transform: translateY(100%); }
+    .btn__gradient:hover .btn__gradient--invisible {
+      top: 0; }
+    .btn__gradient:focus {
+      outline: none;
+      animation: pulsate 1s linear infinite; }
 
 @keyframes pulsate {
   0%, 100% {
@@ -87,6 +118,15 @@ a:visited {
   50% {
     transform: scale(1.05);
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); } }
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center; }
+  .cta__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
 
 .description {
   background-color: #fff;
