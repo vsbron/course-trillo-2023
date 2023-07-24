@@ -14,6 +14,7 @@ Landing page of Trillo booking app. Created as a part of Advanced CSS & Sass pro
  - Stylesheets are written using SCSS;
  - All the elements/classes are written with BEM methodology;
  - Stylesheets files are sorted using 7-1 CSS architecture;
+ - Cross-browser support included;
  - No JavaScript used;
 
 ## Live version

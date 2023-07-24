@@ -11,5 +11,9 @@
     margin-bottom: 2.5rem;
 
     @include respond (tab-port) { margin-bottom: 1.5rem }
+    @include respond (phone-small) {
+      font-size: 2.25rem;
+      font-weight: 400;
+    }
   }
 }

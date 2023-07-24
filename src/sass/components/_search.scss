@@ -32,6 +32,12 @@
       font-weight: 100;
       color: $color-gray-light-4;
     }
+    
+    @include respond (phone-small) {
+      font-size: 14px;
+      padding: 1rem 2rem;
+      width: 100%;
+    }
   }
 
   &__input:focus + &__button { background-color: $color-gray-light-3 }
@@ -42,8 +48,13 @@
     transform: translate(-10px, 1px);
 
     &:focus { outline: none }
-
+    
     &:active { transform: translate(-10px, 2px) }
+    
+    @include respond (phone-small) {
+      transform: translate(-2rem, 1px);
+      &:active { transform: translate(-2rem, 2px) }
+    }
   }
 
   &__icon {
