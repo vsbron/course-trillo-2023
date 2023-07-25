@@ -54,10 +54,18 @@
           </div></nav>
         <main class="hotel-view">
           <div class="gallery">
-            <figure class="gallery__item"><img src="src/img/hotel-1.jpg" class="gallery__photo" alt="Photo of hotel 1" /></figure>
-            <figure class="gallery__item"><img src="src/img/hotel-2.jpg" class="gallery__photo" alt="Photo of hotel 2" /></figure>
-            <figure class="gallery__item"><img src="src/img/hotel-3.jpg" class="gallery__photo" alt="Photo of hotel 3" /></figure>
-          </div>
+            <figure class="gallery__item">
+              <img srcset="src/img/hotel-1-small.jpg 500w, src/img/hotel-1.jpg 1500w" src="src/img/hotel-1.jpg"
+              sizes="(max-width: 56.25em) 34vw, (max-width: 75em) 28vw, 328px" class="gallery__photo" alt="Photo of hotel 1" />
+            </figure>
+            <figure class="gallery__item">
+              <img srcset="src/img/hotel-2-small.jpg 500w, src/img/hotel-2.jpg 1500w" src="src/img/hotel-2.jpg"
+              sizes="(max-width: 56.25em) 34vw, (max-width: 75em) 28vw, 328px" class="gallery__photo" alt="Photo of hotel 2" />
+            </figure>
+            <figure class="gallery__item">
+              <img srcset="src/img/hotel-3-small.jpg 500w, src/img/hotel-3.jpg 1500w" src="src/img/hotel-3.jpg"
+              sizes="(max-width: 56.25em) 34vw, (max-width: 75em) 28vw, 328px" class="gallery__photo" alt="Photo of hotel 3" />
+            </figure></div>
           <div class="overview">
             <h1 class="overview__heading">Hotel Las Palmas</h1>
             <div class="overview__stars">

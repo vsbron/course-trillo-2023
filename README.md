@@ -7,7 +7,7 @@ Landing page of Trillo booking app. Created as a part of Advanced CSS & Sass pro
  - Basic search bar;
  - Description and reviews of the hotel;
  - CTA section;
- - Responsive version for mobile devices (course's version);
+ - Responsive version for mobile devices (improved over course's version);
 
 ## Details
  - Page is built using Flexbox layout;
